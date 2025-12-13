@@ -1756,8 +1756,8 @@ body.is-preload #header .content .inner {
   top: 0;
   left: 50%;
   width: 90vw;
-  height: 100vh;
-  max-width: 900px;
+  max-height: 100vh;
+  max-width: 750px;
   background-color: rgba(27, 31, 34, 0.95);
   border-radius: 0;
   opacity: 0;
