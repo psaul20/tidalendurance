@@ -1570,6 +1570,8 @@ body.is-preload #bg:before {
 #header nav ul li {
   padding-left: 0;
   border-left: solid 1px #ffffff;
+
+
 }
 
 #header nav ul li:first-child {
@@ -1578,14 +1580,15 @@ body.is-preload #bg:before {
 
 #header nav ul li a {
   display: block;
-  min-width: 7.5rem;
+  width: 8rem;
   height: 2.75rem;
   line-height: 2.75rem;
-  padding: 0 1.25rem 0 1.45rem;
+  /* padding: 0 1rem; */
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
   border-bottom: 0;
+  text-align: center;
 }
 
 #header nav ul li a:hover {
