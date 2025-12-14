@@ -1884,3 +1884,8 @@ body.is-article-visible #footer {
 body.is-preload #footer {
   opacity: 0;
 }
+
+/* Custom: Increased list indentation for better visual hierarchy */
+ul {
+  padding-left: 2em;
+}
