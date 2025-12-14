@@ -10,15 +10,9 @@ conditions:
 
 ## Visual Validation Available
 
-You just modified a frontend file (HTML/CSS/SCSS/SASS).
+You just modified a frontend file (HTML/CSS/SCSS/SASS). **you must run the following frontend checks**
 
-**FIRST: Use the AskUserQuestion tool to ask the user:**
-- Question: "Would you like me to validate the frontend changes visually using Playwright?"
-- Options:
-  - "Yes, validate now" (description: "Open the page in browser and test desktop + mobile views")
-  - "No, skip validation" (description: "Skip visual testing for now")
-
-**ONLY if the user selects "Yes, validate now"** - proceed with Playwright validation below.
+Based on the changes made, find impacted HTML and perform the following checks
 
 ### Required Checks:
 
