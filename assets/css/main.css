@@ -197,10 +197,10 @@ body.is-preload *:after {
 /* Type */
 
 html {
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
-@media screen and (max-width: 1680px) {
+/* @media screen and (max-width: 1680px) {
   html {
     font-size: 12pt;
   }
@@ -216,7 +216,7 @@ html {
   html {
     font-size: 10pt;
   }
-}
+} */
 
 body,
 input,
