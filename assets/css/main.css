@@ -1754,7 +1754,7 @@ body.is-preload #header .content .inner {
   z-index: 3;
 }
 
-#main article {
+#main > article {
   -moz-transform: translateX(-50%) translateY(0.25rem);
   -webkit-transform: translateX(-50%) translateY(0.25rem);
   -ms-transform: translateX(-50%) translateY(0.25rem);
@@ -1777,7 +1777,7 @@ body.is-preload #header .content .inner {
   overflow-y: auto;
 }
 
-#main article.active {
+#main > article.active {
   -moz-transform: translateX(-50%) translateY(0);
   -webkit-transform: translateX(-50%) translateY(0);
   -ms-transform: translateX(-50%) translateY(0);
@@ -1785,7 +1785,7 @@ body.is-preload #header .content .inner {
   opacity: 1;
 }
 
-#main article .close {
+#main > article .close {
   display: block;
   position: absolute;
   top: 0;
@@ -1798,7 +1798,7 @@ body.is-preload #header .content .inner {
   white-space: nowrap;
 }
 
-#main article .close:before {
+#main > article .close:before {
   -moz-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out;
@@ -1817,11 +1817,11 @@ body.is-preload #header .content .inner {
   background-repeat: no-repeat;
 }
 
-#main article .close:hover:before {
+#main > article .close:hover:before {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
-#main article .close:active:before {
+#main > article .close:active:before {
   background-color: rgba(255, 255, 255, 0.175);
 }
 
@@ -1844,7 +1844,7 @@ body.is-preload #header .content .inner {
     transform: translateY(0);
   }
 
-  #main article .close:before {
+  #main > article .close:before {
     top: 0.875rem;
     left: 0.875rem;
     width: 2.25rem;
@@ -1976,4 +1976,29 @@ ul {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.9rem;
   font-style: italic;
+}
+
+/* Mobile responsiveness for articles */
+@media screen and (max-width: 736px) {
+  #articles .articles-list {
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+
+  #articles .substack-article {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #articles .articles-list {
+    width: calc(100% + 3rem);
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+
+  #articles .substack-article {
+    padding: 1.5rem 1.5rem;
+  }
 }

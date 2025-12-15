@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head><title>Test XML Parsing</title></head>
+<body>
+<div id="output"></div>
+<script>
+const xmlText = `<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <item>
+      <title><![CDATA[Inflammation]]></title>
+      <description><![CDATA[The Boogeyman of Social Media]]></description>
+      <link>https://tidalendurance.substack.com/p/inflammation</link>
+      <pubDate>Wed, 19 Mar 2025 10:11:29 GMT</pubDate>
+    </item>
+  </channel>
+</rss>`;
+
+const parser = new DOMParser();
+const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+const items = xmlDoc.querySelectorAll('item');
+
+console.log('Items found:', items.length);
+
+items.forEach((item, i) => {
+  const title = item.querySelector('title')?.textContent;
+  const desc = item.querySelector('description')?.textContent;
+  console.log(`Article ${i}:`, {title, desc});
+});
+
+document.getElementById('output').innerHTML = `Found ${items.length} items`;
+</script>
+</body>
+</html>
