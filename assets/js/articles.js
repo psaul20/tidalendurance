@@ -214,7 +214,7 @@
       </div>
       <p class="articles-footer">
         <a href="https://tidalendurance.substack.com/" target="_blank" rel="noopener noreferrer" class="button primary">
-          View All Articles on Substack
+          View on Substack
         </a>
       </p>
     `;
