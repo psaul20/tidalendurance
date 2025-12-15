@@ -1980,6 +1980,10 @@ ul {
 
 /* Mobile responsiveness for articles */
 @media screen and (max-width: 736px) {
+  #articles {
+    overflow-x: hidden;
+  }
+
   #articles .articles-list {
     margin-left: -2rem;
     margin-right: -2rem;
@@ -1987,10 +1991,29 @@ ul {
 
   #articles .substack-article {
     padding: 1.5rem 2rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  #articles .substack-article h3 {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  #articles .articles-footer {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
 @media screen and (max-width: 480px) {
+  #articles {
+    overflow-x: hidden;
+  }
+
   #articles .articles-list {
     margin-left: -1.5rem;
     margin-right: -1.5rem;
@@ -1998,5 +2021,20 @@ ul {
 
   #articles .substack-article {
     padding: 1.5rem 1.5rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  #articles .substack-article h3 {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  #articles .articles-footer {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
