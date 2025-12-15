@@ -36,12 +36,7 @@
             <!-- <li>
               <a>Manage Payments <img src="icons/arrow.svg" /></a>
             </li> -->
-            <li>
-              <a href="https://tidalendurance.substack.com/" target="_blank"
-                >Articles 
-                <img src="icons/arrow.svg" />
-              </a>
-            </li>
+            <li><a href="#articles">Articles</a></li>
           </ul>
         </nav>
       </header>
@@ -202,6 +197,14 @@
               <li><input type="reset" value="Reset" /></li>
             </ul>
           </form>
+        </article>
+
+        <!-- Articles -->
+        <article id="articles">
+          <h2 class="major">Articles</h2>
+          <div id="articles-content">
+            <p class="loading-message">Loading articles from Substack...</p>
+          </div>
         </article>
 
         <!-- Elements -->
@@ -527,5 +530,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/articles.js"></script>
   </body>
 </html>

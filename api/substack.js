@@ -23,7 +23,7 @@ export default async function handler(req, res) {
   if (!url) {
     return res.status(400).json({
       error: 'Missing URL parameter',
-      usage: '/api/substack?url=https://yourpublication.substack.com/feed'
+      usage: '/api/substack?url=https://tidalendurance.substack.com/feed'
     });
   }
 
