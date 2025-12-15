@@ -1,0 +1,12 @@
+{
+  "name": "tidalendurance",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tidal Endurance - Static website with serverless functions",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel"
+  },
+  "keywords": ["static-site", "vercel"],
+  "license": "CC-BY-3.0"
+}
