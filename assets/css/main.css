@@ -1981,7 +1981,6 @@ ul {
 /* Mobile responsiveness for articles */
 @media screen and (max-width: 736px) {
   #articles .articles-list {
-    width: calc(100% + 4rem);
     margin-left: -2rem;
     margin-right: -2rem;
   }
@@ -1993,7 +1992,6 @@ ul {
 
 @media screen and (max-width: 480px) {
   #articles .articles-list {
-    width: calc(100% + 3rem);
     margin-left: -1.5rem;
     margin-right: -1.5rem;
   }
