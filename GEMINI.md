@@ -34,3 +34,8 @@ Additional sections (contact, elements) are commented out in the HTML and can be
 ## Template
 
 Based on "Dimension" by HTML5 UP (html5up.net), licensed under CC BY 3.0. The template includes jQuery, Font Awesome, and responsive utilities.
+
+## Rules
+- When the user prompts with "this is not working" or other language that indicates a bug, use the chrome-devtools-mcp extension to check the issue yourself before proposing an update
+- Always ask before using Nano Banana to create images
+- When making significant changes to the code base, always reference the latest documentation for the code you are working with to ensure you are using the right standards
